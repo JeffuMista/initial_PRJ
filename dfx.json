@@ -1,0 +1,29 @@
+{
+  "canisters": {
+    "initial_PRJ_backend": {
+      "main": "src/initial_PRJ_backend/main.mo",
+      "type": "motoko"
+    },
+    "initial_PRJ_frontend": {
+      "dependencies": [
+        "initial_PRJ_backend"
+      ],
+      "frontend": {
+        "entrypoint": "src/initial_PRJ_frontend/src/index.html"
+      },
+      "source": [
+        "src/initial_PRJ_frontend/assets",
+        "dist/initial_PRJ_frontend/"
+      ],
+      "type": "assets"
+    }
+  },
+  "defaults": {
+    "build": {
+      "args": "",
+      "packtool": ""
+    }
+  },
+  "output_env_file": ".env",
+  "version": 1
+}
